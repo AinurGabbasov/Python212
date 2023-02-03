@@ -1,12 +1,12 @@
 #  Задача 1
 
-def func_compute(n):
-    return lambda x: x * n
-
-
-res = func_compute(2)
-print(res(20))
-print(res(15))
+# def func_compute(n):
+#     return lambda x: x * n
+#
+#
+# res = func_compute(2)
+# print(res(20))
+# print(res(15))
 
 # ==================================================================================
 
