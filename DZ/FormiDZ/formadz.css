@@ -1,0 +1,39 @@
+#right{
+    float: right;
+}
+#zagolov{
+    color: rgb(30, 132, 235);
+    font-size: larger;
+}
+span{
+    color: gray;
+}
+table{
+    border: 2px solid rgb(138, 205, 247);
+    padding: 30px 0 30px;
+}
+.big{
+    font-weight: bold;
+    vertical-align: top;
+}
+.shir{
+    width: 400px;
+}
+.kursiv{
+    font-style: italic;
+    color: black;
+}
+.max_shir{
+    width: 650px;
+}
+.right{
+    text-align: right;
+}
+textarea{
+    width: 98%;
+}
+#level{
+    margin: 0 auto;
+    display: block;
+    width: 650px;
+}

@@ -1,0 +1,41 @@
+body{
+    background-color: beige;
+}
+h1{
+    color: rgb(65, 61, 61);
+    font-style: italic;
+    background-color:bisque;
+    margin: 0 auto;
+    text-align: center;
+    height: 40px;
+    align-items: center;
+    text-shadow: 3px 3px 6px gray;
+    vertical-align: middle;
+    
+}
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: beige;
+    margin-top: 0%;
+    justify-content: center;
+    perspective: 700px;
+}
+.main div{
+    border-radius: 15px;
+    text-align: center;
+    width: 440px;
+    height: 150px;
+    color: rgb(82, 73, 73);
+    font-style: italic;
+    border: 2px solid gray;
+    margin: 20px;
+    padding: 20px;
+    background-color: bisque;
+    box-shadow: 5px 5px 11px gray;
+    text-shadow: 2px 2px 4px gray;
+    transition: 1s all;
+}
+.main div:hover{
+    transform: rotateX(6deg);
+}

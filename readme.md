@@ -1,10 +1,8 @@
 # GitHab
 
-
-## В данном проекте находится большство из того с чем успел столкнуться за время обучения.
 ## Основные моменты:
 ### 1 Системы контроля версий: Git
-### 2 Языки программирования: Python 3 / JS частично
+### 2 Языки программирования: Python 3 / JS частично(html,css)
 ### 3 OOP / объектно ореинтированное программирование
 ### 4 Фреймворки: Django 3, Flask частично
 ### 5 ORM (объектно-реляционные отображения): Django ORM
@@ -16,3 +14,7 @@
 ### 2 Тестирование: unittest, pytest
 ### 3 Django REST framework
 ### 4 Асинхронное программирование: asyncio
+
+#### Stepik Python(1) сертификат: [https://stepik.org/cert/1479349](https://stepik.org/cert/1479349)
+#### Stepik Python(2) сертификат: [https://stepik.org/cert/1534953](https://stepik.org/cert/1534953)
+#### Stepik SQL сертификат: [https://stepik.org/cert/1969772](https://stepik.org/cert/1969772)

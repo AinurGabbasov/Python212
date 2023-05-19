@@ -1,8 +1,137 @@
 
 Самые распространенные методы решения задач Leetcode
+
 Метод скользящего окна (Sliding Window)
+
+1. Вычисление скользящего среднего для временного ряда:
+
+```python
+import pandas as pd
+
+# создаем временной ряд
+data = [10, 20, 30, 40, 50, 60, 70, 80, 90]
+index = pd.date_range('2022-01-01', periods=len(data), freq='D')
+series = pd.Series(data, index=index)
+
+# вычисляем скользящее среднее со значением окна равным 3
+rolling_mean = series.rolling(window=3).mean()
+print(rolling_mean)
+```
+
+2. Обработка изображения с использованием скользящего окна:
+
+```python
+import cv2
+
+# загружаем изображение
+img = cv2.imread('image.jpg')
+
+# устанавливаем размер окна и шаг смещения
+window_size = (50, 50)
+step_size = 10
+
+# проходимся по изображению, используя скользящее окно
+for y in range(0, img.shape[0] - window_size[1], step_size):
+    for x in range(0, img.shape[1] - window_size[0], step_size):
+        # вырезаем фрагмент изображения
+        window = img[y:y + window_size[1], x:x + window_size[0]]
+        # обрабатываем фрагмент
+        processed_window = process_window(window)
+        # заменяем фрагмент на обработанный
+        img[y:y + window_size[1], x:x + window_size[0]] = processed_window
+
+# сохраняем результат
+cv2.imwrite('processed_image.jpg', img)
+```
+
+3. Обнаружение аномалий в данных с помощью скользящего окна:
+
+```python
+import pandas as pd
+
+# создаем временной ряд
+data = [10, 20, 30, 40, 50, 200, 70, 80, 90]
+index = pd.date_range('2022-01-01', periods=len(data), freq='D')
+series = pd.Series(data, index=index)
+
+# вычисляем скользящее среднее и стандартное отклонение со значением окна равным 3
+rolling_mean = series.rolling(window=3).mean()
+rolling_std = series.rolling(window=3).std()
+
+# определяем аномалии как значения, которые отклоняются от среднего более чем на 3 стандартных отклонения
+anomalies = []
+for i in range(len(series)):
+    if series[i] > rolling_mean[i] + 3 * rolling_std[i] or series[i] < rolling_mean[i] - 3 * rolling_std[i]:
+        anomalies.append(series[i])
+print(anomalies)
+```
+
 Метод двух указателей (Two Pointers)
+
+1. Найти все пары чисел в массиве, которые в сумме дают определенное значение:
+
+```python
+def find_pairs(arr, target):
+    left, right = 0, len(arr) - 1
+    pairs = []
+    while left < right:
+        current_sum = arr[left] + arr[right]
+        if current_sum == target:
+            pairs.append((arr[left], arr[right]))
+            left += 1
+            right -= 1
+        elif current_sum < target:
+            left += 1
+        else:
+            right -= 1
+    return pairs
+
+arr = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+target = 10
+print(find_pairs(arr, target))
+```
+
+2. Определить, является ли заданная строка палиндромом:
+
+```python
+def is_palindrome(s):
+    left, right = 0, len(s) - 1
+    while left < right:
+        if s[left] != s[right]:
+            return False
+        left += 1
+        right -= 1
+    return True
+
+s = 'racecar'
+print(is_palindrome(s))
+```
+
+3. Найти максимальный подмассив с нулевой суммой:
+
+```python
+def max_subarray_with_zero_sum(arr):
+    sums = {}
+    current_sum = 0
+    max_length = 0
+    for i in range(len(arr)):
+        current_sum += arr[i]
+        if current_sum == 0:
+            max_length = i + 1
+        elif current_sum in sums:
+            max_length = max(max_length, i - sums[current_sum])
+        else:
+            sums[current_sum] = i
+    return max_length
+
+arr = [4, 2, -3, 1, 6, -3, -1, 5]
+print(max_subarray_with_zero_sum(arr))
+```
+
 Нахождение цикла (Fast & Slow Pointers)
+
+
+
 Интервальное слияние (Merge Intervals)
 Цикличная сортировка (Cyclic Sort)
 In-place Reversal для LinkedList (In-place Reversal of a LinkedList)

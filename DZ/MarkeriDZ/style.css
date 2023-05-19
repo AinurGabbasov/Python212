@@ -1,0 +1,53 @@
+/* ul{
+    list-style-type: circle;
+    list-style-image: url(icon.jpg);
+    text-align: center;
+    list-style-position: inside;
+}
+body{
+    background: rgb(0, 255, 234);
+} */
+
+/* .arrow{
+    list-style-image: url(s.gif);
+}
+ol{
+    list-style-image: none;
+} */
+body{
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif
+}
+#ab{
+    color: red;
+}
+#av{
+    color: rgba(233, 212, 22, 0.911);
+}
+#ag{
+    color: green;
+}
+#ax{
+    color: rgba(6, 162, 173, 0.836);
+}
+#aq{
+    color: blueviolet;
+}
+.arro{
+    color: black;
+}
+.or{
+    list-style-image: url(orange_marker.png);
+}
+.red{
+    list-style-image: url(red_marker.png);
+}
+.gre{
+    list-style-image: url(green_marker.png);
+}
+.ty{
+    list-style-image: url(blue_marker.png);
+}
+.bl{
+    list-style-image: url(black_marker.png);
+}
