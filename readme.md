@@ -1,6 +1,21 @@
 # GitHab
 
-## Основные моменты:
+## Имя: Айнур
+## Возраст: 30
+## Образование: Высшее неполное
+## Факультет: Математики и информационных технологий
+
+## Опыт работы: 
+- chat gpt
+- ютуб курсы
+- курсы степик
+- leetcode, codewars
+
+#### Stepik Python(1) сертификат: [https://stepik.org/cert/1479349](https://stepik.org/cert/1479349)
+#### Stepik Python(2) сертификат: [https://stepik.org/cert/1534953](https://stepik.org/cert/1534953)
+#### Stepik SQL сертификат: [https://stepik.org/cert/1969772](https://stepik.org/cert/1969772)
+
+## Что я изучал:
 ### 1 Системы контроля версий: Git
 ### 2 Языки программирования: Python 3 / JS частично(html,css)
 ### 3 OOP / объектно ореинтированное программирование
@@ -9,12 +24,16 @@
 ### 6 Базы данных: PostgreSQL, MySQL, SQLite
 ### 7 Инструменты для управления зависимостями: pip, virtualenv
 ### 8 Контейнеры: Docker
-## Для освоения в ближайшие несколько месяцев
+### 9 работа с figma
+
+## Для освоения в ближайшие несколько месяцев:
 ### 1 Веб-серверы: Nginx, Gunicorn
 ### 2 Тестирование: unittest, pytest
 ### 3 Django REST framework
 ### 4 Асинхронное программирование: asyncio
 
-#### Stepik Python(1) сертификат: [https://stepik.org/cert/1479349](https://stepik.org/cert/1479349)
-#### Stepik Python(2) сертификат: [https://stepik.org/cert/1534953](https://stepik.org/cert/1534953)
-#### Stepik SQL сертификат: [https://stepik.org/cert/1969772](https://stepik.org/cert/1969772)
+## Личные качества:
+- Ответственность и дисциплинированность.
+- Умение работать в коллективе
+- Не конфиликтный
+- Желание учиться и развиваться в области Python-разработки

@@ -74,3 +74,7 @@
 #     text = data.find("p", class_="card-text").text
 #     url_img = "https://scrapingclub.com" + data.find("img", class_="card-img-top img-fluid").get("src")
 #     print(name + "\n" + price + "\n" + text + "\n" + url_img + "\n\n")
+
+
+
+
